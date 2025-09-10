@@ -21,7 +21,7 @@ while True:
         valor = float(input("Informe o valor do DEPÓSITO: "))
         if valor > 0:
             saldo += valor
-            extrato += f"DEPÓSITO: R$ {valor:.2f}\n"
+            extrato += f"\nDEPÓSITO: R$ {valor:.2f}"
 
         else:
             print(f"Erro no depósito! Valor: {valor} inválido.")
@@ -29,8 +29,10 @@ while True:
         valor = float(input("Informe o valor do SAQUE: "))
         print(f"SAQUE {valor}.")
     elif opcao == "E":
-        if(extrato != ""): print(f"EXTRATO. {extrato}")
-        print("Sem EXTRATO.")
+        if(extrato != ""):
+            print(f"EXTRATO. {extrato}")
+        else:
+            print("Sem EXTRATO.")
     elif opcao == "Q":
         break
     else:
