@@ -28,4 +28,4 @@ while True:
     elif opcao == "Q":
         break
     else:
-        print("Erro.")
+        print("Erro. Escolha a opção ||===>>[Q]<<=====SAIR============|| ")
