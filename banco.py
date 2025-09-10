@@ -17,15 +17,15 @@ while True:
 
     opcao = input(menu)
 
-    if opcao == "d":
-        valor = float(input("Informe o valor do saque: "))
-        print(f"Deposito {valor}.")
-    elif opcao == "s":
-        valor = float(input("Informe o valor do saque: "))
-        print(f"Saque {valor}.")
-    elif opcao == "e":
-        print("Extrato.")
-    elif opcao == "q":
+    if opcao == "D":
+        valor = float(input("Informe o valor do DEPOSITO: "))
+        print(f"DEPOSITO {valor}.")
+    elif opcao == "S":
+        valor = float(input("Informe o valor do SAQUE: "))
+        print(f"SAQUE {valor}.")
+    elif opcao == "E":
+        print("EXTRATO.")
+    elif opcao == "Q":
         break
     else:
         print("Erro.")
