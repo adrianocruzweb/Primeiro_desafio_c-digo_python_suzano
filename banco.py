@@ -29,7 +29,8 @@ while True:
         valor = float(input("Informe o valor do SAQUE: "))
         print(f"SAQUE {valor}.")
     elif opcao == "E":
-        print("EXTRATO.")
+        if(extrato != ""): print(f"EXTRATO. {extrato}")
+        print("Sem EXTRATO.")
     elif opcao == "Q":
         break
     else:
