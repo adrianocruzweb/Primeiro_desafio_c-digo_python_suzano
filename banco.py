@@ -27,7 +27,23 @@ while True:
             print(f"Erro no depósito! Valor: {valor} inválido.")
     elif opcao == "S":
         valor = float(input("Informe o valor do SAQUE: "))
-        print(f"SAQUE {valor}.")
+        if saldo < valor:
+            print("Erro! Saldo insuficiente.")
+
+        elif limite < valor:
+            print("Erro! Não pode fazer saque maior que limite.")
+
+        elif numero_saques >= 3:
+            print("Erro! Número máximo de saques excedido.")
+
+        elif valor > 0:
+            saldo -= valor
+            extrato += f"\nSaque: R$ {valor:.2f}"
+            numero_saques += 1
+
+        else:
+            print(f"Erro! SAQUE {valor} Invalido.")
+
     elif opcao == "E":
         if(extrato != ""):
             print(f"EXTRATO. {extrato}")
