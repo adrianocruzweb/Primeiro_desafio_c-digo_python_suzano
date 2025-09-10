@@ -46,7 +46,7 @@ while True:
 
     elif opcao == "E":
         if(extrato != ""):
-            print(f"EXTRATO. {extrato}")
+            print(f"EXTRATO. {extrato}/n Fim EXTRATO")
         else:
             print("Sem EXTRATO.")
     elif opcao == "Q":
